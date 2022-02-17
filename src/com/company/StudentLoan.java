@@ -2,8 +2,8 @@ package com.company;
 
 public class StudentLoan extends Loan {
     
-    private boolean isDeferred; 
-    
+    private boolean isDeferred;
+
     public StudentLoan(String name ,double amount,double rate, int months, boolean isDef){
         super(name, amount, rate, months);
         isDeferred = isDef;
@@ -15,6 +15,13 @@ public class StudentLoan extends Loan {
 
     public void setDeferred(boolean Deferred) {
         isDeferred = Deferred;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentLoan{" +
+                "isDeferred=" + isDeferred +
+                "} " + super.toString();
     }
 
     @Override
