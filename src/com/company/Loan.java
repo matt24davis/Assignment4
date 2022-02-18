@@ -14,6 +14,7 @@ public class Loan {
         loanBalance = amount;
         interestRate = rate;
         numberOfMonthlyPayments = months;
+        accountNumber = ++numberOfLoans;
     }
 
     public static int getNumberOfLoans() {

@@ -33,16 +33,21 @@ public class Main {
                 store object in arraylist
                 */
     }
-
 public void deleteLoan(){
+  System.out.println("Customer Name:");
+   String name; name = sc.next();
+   //search where name
+   //object found
+   //remove from array
     }
 
 public void calculateMonthlyLoanPayment(){
-
+//transvere array
+    //for loop
 }
 public void printLoans(){
-
-
+//transvere array
+    //for loop
 }
 }
 
