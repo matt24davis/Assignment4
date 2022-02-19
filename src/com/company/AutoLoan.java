@@ -26,8 +26,6 @@ public class AutoLoan extends Loan {
 
     @Override
     public String toString() {
-        return "AutoLoan{" +
-                "downPayment=" + downPayment +
-                "} " + super.toString();
+        return super.toString()+"Down Payment = "+downPayment;
     }
 }
