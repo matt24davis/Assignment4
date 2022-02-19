@@ -69,10 +69,7 @@ public class Main {
                 sc.nextLine();
                 System.out.println("Is Loan Deferred? (Y/N):");
                 String isDef = sc.nextLine();
-                if (isDef.equalsIgnoreCase("Y")) {
-                    isDeferred = true;
-                } else
-                    isDeferred = false;
+                isDeferred = isDef.equalsIgnoreCase("Y");
                 StudentLoan mySL = new StudentLoan(Name, loanAmount, interestRate, numberOfMonthlyPayments, isDeferred);
                 AL.add(mySL);
             } else if (typeLoan == 2) {
@@ -95,13 +92,13 @@ public class Main {
             }
         }
         public void calculateMonthlyLoanPayment (ArrayList < Loan > AL) {
-            for (int i = 0; i < AL.size(); i++) {
-                System.out.println(AL.get(i));
+            for (Loan loan : AL) {
+                System.out.println(loan);
             }
         }
         public void printLoans (ArrayList < Loan > AL) {
-            for (int i = 0; i < AL.size(); i++) {
-                System.out.println(AL.get(i));
+            for (Loan loan : AL) {
+                System.out.println(loan);
             }
         }
     }
